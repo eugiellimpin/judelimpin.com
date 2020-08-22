@@ -24,20 +24,12 @@
 
 <body>
   <div class="grid-container">
-    <img src="assets/images/1.jpg" />
-    <img src="assets/images/2.jpg" />
-    <img src="assets/images/3.jpg" />
-    <img src="assets/images/4.jpg" />
-    <img src="assets/images/5.jpg" />
-    <img src="assets/images/6.jpg" />
-    <img src="assets/images/7.jpg" />
-    <img src="assets/images/8.jpg" />
-    <img src="assets/images/9.jpg" />
-    <img src="assets/images/10.jpg" />
-    <img src="assets/images/11.jpg" />
-    <img src="assets/images/12.jpg" />
-    <img src="assets/images/13.jpg" />
-    <img src="assets/images/14.jpg" />
+    {% for name in (1..14) %}
+    <div class="img">
+      <img src="assets/images/{{ name }}b.jpg" />
+      <img src="assets/images/{{ name }}.jpg" />
+    </div>
+    {% endfor %}
   </div>
 </body>
 

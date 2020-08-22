@@ -12,3 +12,21 @@
   width: 100%;
   border-radius: 0.2rem;
 }
+
+.img {
+  position: relative;
+}
+
+.img > img + img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img > img {
+  transition: opacity 0.2s ease-in;
+}
+
+.img > img:hover {
+  opacity: 0;
+}
